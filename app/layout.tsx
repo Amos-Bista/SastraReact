@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import {Inconsolata} from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const inconsolata = Inconsolata({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Sastra Network Solutions Inc.',
-  description: 'Powering you for tomorrow',
+  description: 'Powerining you for tomorrow',
 }
 
 export default function RootLayout({
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html>
-      <body className='px-32'>
+    <html className={inconsolata.className}>
+      <body className='lg:px-32 md:px-14 sm:px-6'>
         <Navbar />
           <main>
             {children}

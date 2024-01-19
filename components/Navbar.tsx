@@ -8,10 +8,10 @@ const Navbar = () => {
         </div>
         <div className='flex items-center'>
             <ul className='flex justify-between gap-5 text-[#244a5f] text-2xl cursor-pointer'>
-                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black'>Home</li>
-                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black'>About</li>
-                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black'>Career</li>
-                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black'>Contact</li>
+                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150'>Home</li>
+                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150'>About</li>
+                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150'>Career</li>
+                <li className='transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150'>Contact</li>
             </ul>
         </div>
     </div>
