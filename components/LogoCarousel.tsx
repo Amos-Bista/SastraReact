@@ -29,14 +29,14 @@ export default function LogoCarousel() {
 
   return (
     <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-80 animate-infinite-scroll">
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-60 animate-infinite-scroll">
         {logos.map((logo, index) => (
           <li key={index}>
             <Image src={logo.src} alt={logo.alt} />
           </li>
         ))}
       </ul>
-      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-80 animate-infinite-scroll" aria-hidden="true">
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-60 animate-infinite-scroll" aria-hidden="true">
         {logos.map((logo, index) => (
           <li key={index}>
             <Image src={logo.src} alt={logo.alt} />

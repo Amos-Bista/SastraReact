@@ -31,7 +31,7 @@ export default function Home() {
           </div>
         </div>
         <div className='mt-10'>
-          <p className='text-center font-bold text-2xl mb-10'>Our Valued Clients</p>
+          <p className='text-center font-extrabold text-2xl mb-10'>Our Valued Clients</p>
           <LogoCarousel />
         </div>
       </div>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='text-2xl w-[50%] text-center'>
           Quick Links
           <div className='text-lg'>
-            <ul className='flex justify-center gap-5 pt-3 text-orange-500 font-semibold'>
+            <ul className='flex justify-center gap-5 pt-5 text-orange-500 font-semibold'>
               <li>About</li>
               <li>Career</li>
               <li>Contact</li>
@@ -16,6 +16,13 @@ const Footer = () => {
         </div>
         <div className='text-2xl w-[50%] text-center'>
           Follow us
+          <div className=''>
+            <ul className='flex justify-center gap-5 pt-3'>
+              <li><img src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png" alt="" className='w-9 rounded-full'/></li>
+              <li><img src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-6xtrjbtc.png" alt="" className='w-10 rounded-full'/></li>
+              <li><img src="https://static-00.iconduck.com/assets.00/twitter-icon-2048x2048-pm1hdjoo.png" alt="" className='w-10 rounded-full'/></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className='w-[65%] h-[40%] text-center border-t-2 m-auto pt-3'>
