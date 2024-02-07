@@ -2,12 +2,12 @@ import React from 'react';
 
 function Testo () {
     return (
-        <div className='h-90 w-[100%] bg-gray-200 flex justify-center gap-4 py-10 px-10'>
+        <div className='h-90 w-[100%] bg-gray-200 flex justify-center gap-4 py-10 px-10 mt-16'>
             <div className=' w-[22%]'>
                 <div className=' py-6 px-10'>
                     <h1 className=' text-sm text-roboto w-[100%] font-bold text-blue-500'>WHAT OUR CLIENT SAYS</h1>
                     <br />
-                    <h2 className=' font-semibold font-Poppins text-lg'>Testimonials</h2>
+                    <h2 className=' font-semibold font-Poppins text-3xl'>Testimonials</h2>
                 </div>
             </div>
             <div className=' bg-white w-[28%] py-10 px-10 border-b-4 border-blue-500'> 
