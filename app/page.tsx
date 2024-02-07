@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import LogoCarousel from "@/components/LogoCarousel";
+import Testo from "@/components/testo"; 
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
             Our Valued Clients
           </p>
           <LogoCarousel />
+          <Testo />
         </div>
       </div>
     </main>
