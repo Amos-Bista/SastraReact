@@ -11,17 +11,17 @@ const Navbar = () => {
       </div>
       <div className="flex items-center">
         <ul className="flex justify-between gap-5 text-[#244a5f] text-xl cursor-pointer">
-          <li className="transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150">
-            Home
+          <li className="transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150  ">
+           <a href="/"> Home</a>
           </li>
           <li className="transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150">
-            About
+            <a href="/about">About</a>
           </li>
           <li className="transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150">
-            Career
+            <a href="/career">Career</a>
           </li>
           <li className="transition duration-300 border-b-2 border-solid border-transparent hover:border-black hover:brightness-150">
-            Contact
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </div>

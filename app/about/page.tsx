@@ -10,7 +10,7 @@ import { HiDatabase } from "react-icons/hi";
 import { FaHandshakeSimple, FaVideo } from "react-icons/fa6";
 import { SiSpringsecurity } from "react-icons/si";
 import { TiWiFi } from "react-icons/ti";
-import AboutImg from "@/components/about";
+import AboutImg from "@/components/aboutImg";
 import AboutBox from "@/components/aboutBox";
 import { IconBaseProps } from "react-icons";
 import AboutExp from "@/components/AboutExp";
@@ -26,11 +26,11 @@ export default function About() {
       <div className="pt-10">
         <AboutImg />
         <div className="py-20 px-20" >
-            <div className="my-8">
+            <div className="my-6">
                 <h1 className="text-l font-bold text-sky-600">OUR STORY</h1>
             </div>
             <div>
-                <h1 className="font-bold text-3xl text-gray-700 mb-4">Networking Company</h1>
+                <h1 className="font-bold text-3xl text-blue-900 mb-4">Networking Company</h1>
                 <p>Established in the year 2003, Sastra concentrates on providing state-of-art technology solutions in system integration, network architecture, integrated cross-platform client-server  infrastructure design and implementation, supporting and maintaining a wide variety of networking services with an emphasis on standards compliance and optimization.</p>
             </div>
             <div className="my-8">
@@ -43,7 +43,7 @@ export default function About() {
         </div>
 
 
-        <div className="shadow-lg py-20">
+        <div className="shadow-lg py-10">
           <div className="flex flex-col  mx-auto">
            
            <div className="flex flex-col">
@@ -68,8 +68,8 @@ export default function About() {
 
        <div>
         <div className="my-20 flex flex-col ">
-           <h1 className="text-blue-600 text-l font-bold mb-8 flex justify-center">OUR EXPERTISE</h1>
-           <h2 className="text-gray-800 text-3xl font-bold flex justify-center">Why Choose Us</h2>
+           <h1 className="text-blue-900 text-l font-bold mb-8 flex justify-center">OUR EXPERTISE</h1>
+           <h2 className="text-sky-600 text-3xl font-bold flex justify-center">Why Choose Us</h2>
              <div className="flex justify-center gap-10 ">
              <AboutExp
                 logo={<IoMan size={80}  className="size={120} hover:scale-125 transition-all ease-in-out hover:cursor-pointer duration-200"/>}
