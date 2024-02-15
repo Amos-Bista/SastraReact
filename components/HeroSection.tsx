@@ -17,7 +17,7 @@ const HeroSection = () => {
     <div style={backgroundStyle}>
       <div className="m-auto">
         <div className="text-slate-300 text-4xl font-semibold">
-          Powering you for tomorrow
+          Powering you for tommorrow
         </div>
         <div className="p-6 flex">
           <div className="flex gap-5 w-[100%]">
