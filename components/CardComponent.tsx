@@ -3,7 +3,7 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 
 const CardComponent = () => {
   return (
-    <div                                                              // Main div with background
+    <div // Main div with background
       className="w-[100%] h-[100%] mx-auto flex justify-center"
       style={{
         backgroundImage:
@@ -12,15 +12,20 @@ const CardComponent = () => {
         backgroundPosition: "center", // Center the background image
       }}
     >
-      <div className="w-[98%] md:w-[70%] lg:w-[50%] h-[50%] mx-auto  justify-center mb-10"  // Outer Div
-      >  
-        <div className=" w-[100%] h-[100%]  pt-2 pb-2 shadow-2xl border-sky-100 bg-white hover:shadow-2xl my-10 transition-all ease-in-out rounded-xl" //Inner div card Starts Here
+      <div
+        className="w-[98%] md:w-[70%] lg:w-[50%] h-[50%] mx-auto  justify-center mb-10" // Outer Div
+      >
+        <div
+          className=" w-[100%] h-[100%]  pt-2 pb-2 shadow-2xl border-sky-100 bg-white hover:shadow-2xl my-10 transition-all ease-in-out rounded-xl" //Inner div card Starts Here
         >
-          <div className="  pl-[3%] border-b-2 border-sky-900 pb-2" //Upper Part of the Card
+          <div
+            className="  pl-[3%] border-b-2 border-sky-900 pb-2" //Upper Part of the Card
           >
-            <div className=" pt-[2%] flex justify-between h-[20%]"  //logo & header of the card
+            <div
+              className=" pt-[2%] flex justify-between h-[20%]" //logo & header of the card
             >
-              <div className="w-[30%] " //logo
+              <div
+                className="w-[30%] " //logo
               >
                 <img
                   src="https://sastranetwork.com/storage/2021/05/sastra-logo-2048x1220.png"
@@ -28,7 +33,8 @@ const CardComponent = () => {
                   className="h-18 pl-[5%] "
                 />
               </div>
-              <div className=" w-[70%] flex justify-center pt-[3%] pl-[5%] " //header of the card
+              <div
+                className=" w-[70%] flex justify-center pt-[3%] pl-[5%] " //header of the card
               >
                 <h1 className="font-extrabold text-3xl">
                   Sastra Network Solution Inc.
@@ -36,9 +42,11 @@ const CardComponent = () => {
               </div>
             </div>
 
-            <section className=" px-[5%] flex w-[100%]  " //lower Details Starts here 
+            <section
+              className=" px-[5%] flex w-[100%]  " //lower Details Starts here
             >
-              <div className="w-[55%] pl-[1%] pt-[2%]" //Deatails of the Staff
+              <div
+                className="w-[55%] pl-[1%] pt-[2%]" //Deatails of the Staff
               >
                 <div className="pt-[8%] pb-[2%] flex">
                   <h1 className="font-semibold text-xl">ID : -</h1>
@@ -64,20 +72,23 @@ const CardComponent = () => {
                 </div>
               </div>
 
-              <div className="flex justify-center w-[40%] h-[100%] " //Card Image & Name & Position 
+              <div
+                className="flex justify-center w-[40%] h-[100%] " //Card Image & Name & Position
               >
                 <div className="h-[100%] flex-col justify-center">
                   <div className="   flex justify-center">
-                    <div className=" w-48 h-48 rounded-full flex justify-center item-center border-2 border-sky-700 overflow-hidden" //Image div
+                    <div
+                      className=" w-48 h-48 rounded-full flex justify-center item-center border-2 border-sky-700 overflow-hidden" //Image div
                     >
-                      <img                        //Image of the staff
+                      {/* <img                        //Image of the staff
                         src="IMG_8569.jpg"
                         alt="ID image"
                         className="object-cover"
-                      />
+                      /> */}
                     </div>
                   </div>
-                  <div className="pt-[5%] w-[100%] flex-col justify-center" //Name and Position  div
+                  <div
+                    className="pt-[5%] w-[100%] flex-col justify-center" //Name and Position  div
                   >
                     <h1 className="py-[2%] text-l  font-sans font-semibold mx-auto flex justify-center">
                       Amosh ST Bista

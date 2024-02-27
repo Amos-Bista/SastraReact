@@ -5,10 +5,15 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
-import Tick from "@/components/recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
+
 import Map from "@/components/Map";
 
 export default function CareerPage() {
+  const handlecaptcha = () => {
+    console.log("captcha");
+  };
+
   return (
     <div>
       <br />
@@ -105,7 +110,11 @@ export default function CareerPage() {
             />
             <br />
             <div className=" flex justify-center">
-              <Tick />
+              {/* Your form components */}
+              <ReCAPTCHA
+                sitekey="6Ld823YpAAAAACx86ac-U8sVELYhRKE73Qij8Z2C"
+                onChange={handlecaptcha}
+              />
             </div>
             <br />
             <div className="flex justify-center">
