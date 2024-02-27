@@ -2,15 +2,21 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#06192F] w-full h-72 text-white mt-10">
+    <div className="bg-[#161d25] w-full h-72 text-white mt-10">
       <div className="w-[50%] h-[50%] m-auto flex pt-10 font-bold">
         <div className="text-2xl w-[50%] text-center">
           Quick Links
           <div className="text-lg">
             <ul className="flex justify-center gap-5 pt-5 text-orange-500 font-semibold">
-              <li>About</li>
-              <li>Career</li>
-              <li>Contact</li>
+              <li className=" hover:scale-150 transition-all duration-300 ease-in-out">
+                <a href="/about"> About </a>
+              </li>
+              <li className="  hover:scale-150 transition-all duration-300 ease-in-out">
+                <a href="/career">Career</a>
+              </li>
+              <li className="  hover:scale-150 transition-all duration-300 ease-in-out">
+                <a href="contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -18,26 +24,35 @@ const Footer = () => {
           Follow us
           <div className="">
             <ul className="flex justify-center gap-5 pt-3">
-              <li>
-                <img
-                  src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png"
-                  alt=""
-                  className="w-9 rounded-full"
-                />
+              <li className=" hover:scale-150 transition-all duration-300 ease-in-out">
+                <a href="https://www.facebook.com/sastra.network">
+                  <img
+                    src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png"
+                    alt=""
+                    className="w-9 rounded-full"
+                  />
+                </a>
               </li>
-              <li>
-                <img
-                  src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-6xtrjbtc.png"
-                  alt=""
-                  className="w-10 rounded-full"
-                />
+
+              <li  className=" hover:scale-150 transition-all duration-300 ease-in-out">
+                <a href="https://www.linkedin.com/company/sastra/about/">
+                  <img
+                    src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-6xtrjbtc.png"
+                    alt=""
+                    className="w-10 rounded-full"
+                  />
+               </a>
               </li>
-              <li>
-                <img
-                  src="https://static-00.iconduck.com/assets.00/twitter-icon-2048x2048-pm1hdjoo.png"
-                  alt=""
-                  className="w-10 rounded-full"
-                />
+
+
+              <li  className=" hover:scale-150 transition-all duration-300 ease-in-out">
+                <a href="https://x.com/SastraNetwork?s=09">
+                   <img
+                    src="https://static-00.iconduck.com/assets.00/twitter-icon-2048x2048-pm1hdjoo.png"
+                    alt=""
+                    className="w-10 rounded-full"
+                  />
+                </a>
               </li>
             </ul>
           </div>

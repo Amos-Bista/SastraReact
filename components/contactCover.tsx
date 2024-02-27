@@ -6,7 +6,7 @@ const ContactImg = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100%",
-    height: "300px",
+    height: "200px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -16,7 +16,7 @@ const ContactImg = () => {
   return (
     <div style={backgroundStyle}>
       <div className="">
-        <div className="text-slate-300 text-4xl font-semibold">
+        <div className="text-slate-100 text-4xl font-semibold">
          Contact Us
         </div>
         

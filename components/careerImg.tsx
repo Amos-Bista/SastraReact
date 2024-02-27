@@ -6,17 +6,17 @@ const CareerImg = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     width: "100%",
-    height: "250px",
+    height: "200px",
     display: "flex",
     alignItems: "center",
-    
+    justifyContent: "center" ,
     borderRadius: "13px",
   };
 
   return (
     <div style={backgroundStyle} className="mt-10">
       <div className="">
-        <div className="text-slate-100 text-4xl font-semibold ml-20">
+        <div className="text-slate-100 text-4xl font-semibold ">
          Career at Sastra
         </div>
         
