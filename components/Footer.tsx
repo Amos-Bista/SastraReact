@@ -34,20 +34,19 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li  className=" hover:scale-150 transition-all duration-300 ease-in-out">
+              <li className=" hover:scale-150 transition-all duration-300 ease-in-out">
                 <a href="https://www.linkedin.com/company/sastra/about/">
                   <img
                     src="https://static-00.iconduck.com/assets.00/linkedin-icon-512x512-6xtrjbtc.png"
                     alt=""
                     className="w-10 rounded-full"
                   />
-               </a>
+                </a>
               </li>
 
-
-              <li  className=" hover:scale-150 transition-all duration-300 ease-in-out">
+              <li className=" hover:scale-150 transition-all duration-300 ease-in-out">
                 <a href="https://x.com/SastraNetwork?s=09">
-                   <img
+                  <img
                     src="https://static-00.iconduck.com/assets.00/twitter-icon-2048x2048-pm1hdjoo.png"
                     alt=""
                     className="w-10 rounded-full"
@@ -66,7 +65,7 @@ const Footer = () => {
           +977-1-5346317
         </p>
       </div>
-      <div className="w-full h-[10%] bg-[#afe9f8] text-black text-center pt-1">
+      <div className="w-full h-[10%] bg-sky-900 text-white   text-center pt-1">
         Copyright © 2024 Sastra Network Solution Inc. All rights reserved.
       </div>
     </div>
