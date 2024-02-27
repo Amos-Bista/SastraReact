@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Footer = () => {
   return (
     <div className="bg-[#161d25] w-full h-72 text-white mt-10">
@@ -65,7 +66,7 @@ const Footer = () => {
           +977-1-5346317
         </p>
       </div>
-      <div className="w-full h-[10%] bg-sky-900 text-white   text-center pt-1">
+      <div className="w-full h-[10%] bg-[#161d25] text-white font-extrabold  text-center pt-1">
         Copyright © 2024 Sastra Network Solution Inc. All rights reserved.
       </div>
     </div>

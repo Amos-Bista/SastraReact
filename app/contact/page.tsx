@@ -94,7 +94,11 @@ export default function CareerPage() {
       </div>
 
       <div className="w-[60%] bg-sky-600 px-64 py-10 flex justify-center mx-auto rounded-2xl ">
+<<<<<<< Updated upstream
         <form className="" onSubmit={handleSubmit}>
+=======
+        <form className="" action="" method="POST">
+>>>>>>> Stashed changes
           <h1 className="font-bold text-white text-3xl my-4">
             Get in Touch with us.
           </h1>
@@ -103,31 +107,51 @@ export default function CareerPage() {
               type="text"
               placeholder="Name"
               className="w-[100%] my-2 px-4 py-1 rounded-xl "
+<<<<<<< Updated upstream
               onChange={(e) => setName(e.target.value)}
+=======
+              required
+>>>>>>> Stashed changes
             />
             <input
               type="email"
               placeholder="Email"
               className="w-[100%] my-2 px-4 py-1 rounded-xl "
+<<<<<<< Updated upstream
               onChange={(e) => setEmail(e.target.value)}
+=======
+              required
+>>>>>>> Stashed changes
             />
             <input
               type="number"
               placeholder="Phone no"
               className="w-[100%] my-2 px-4 py-1 rounded-xl "
+<<<<<<< Updated upstream
               onChange={(e) => setPhone(e.target.value)}
+=======
+              required
+>>>>>>> Stashed changes
             />
             <input
               type="text"
               placeholder="Company Name"
               className="w-[100%] my-2  px-4 py-1 rounded-xl "
+<<<<<<< Updated upstream
               onChange={(e) => setCompany(e.target.value)}
+=======
+              required
+>>>>>>> Stashed changes
             />
             <input
               type="text"
               placeholder="Message"
               className="w-[100%] h-24 my-2 px-4 py-1 flex justify-start items-start  rounded-xl  "
+<<<<<<< Updated upstream
               onChange={(e) => setMessage(e.target.value)}
+=======
+              required
+>>>>>>> Stashed changes
             />
             <br />
             <div className=" flex justify-center">
@@ -139,10 +163,14 @@ export default function CareerPage() {
             </div>
             <br />
             <div className="flex justify-center">
+<<<<<<< Updated upstream
               <button
                 type="submit"
                 className="h-10 w-60 bg-white font-mono text-l hover:scale-110 hover:bg-gray-200 rounded-xl "
               >
+=======
+              <button type="submit" className="h-10 w-60 bg-white font-mono text-l hover:text-sky-900 hover:scale-110 hover:bg-sky-200 trasition ease-in-out duration-300 rounded-xl ">
+>>>>>>> Stashed changes
                 Submit
               </button>
             </div>

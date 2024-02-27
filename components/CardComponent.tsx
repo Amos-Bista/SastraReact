@@ -13,91 +13,52 @@ const CardComponent = () => {
       }}
     >
       <div
-        className="w-[98%] md:w-[70%] lg:w-[50%] h-[50%] mx-auto  justify-center mb-10" // Outer Div
+        className="w-[98%] md:w-[70%] lg:w-[50%] h-[60%] mx-auto  justify-center mb-10 " // card outer Div
       >
         <div
-          className=" w-[100%] h-[100%]  pt-2 pb-2 shadow-2xl border-sky-100 bg-white hover:shadow-2xl my-10 transition-all ease-in-out rounded-xl" //Inner div card Starts Here
+          className="relative w-[100%] h-[100%]  pt-2 pb-2 shadow-2xl border-sky-100 bg-white hover:shadow-2xl my-10 transition-all ease-in-out rounded-xl" //Inner div card Starts Here
         >
           <div
-            className="  pl-[3%] border-b-2 border-sky-900 pb-2" //Upper Part of the Card
+            className="border-b-2 border-sky-900 pb-2" //Upper Part of the Card
           >
             <div
-              className=" pt-[2%] flex justify-between h-[20%]" //logo & header of the card
-            >
-              <div
-                className="w-[30%] " //logo
-              >
-                <img
-                  src="https://sastranetwork.com/storage/2021/05/sastra-logo-2048x1220.png"
-                  alt="sastra"
-                  className="h-18 pl-[5%] "
-                />
-              </div>
-              <div
-                className=" w-[70%] flex justify-center pt-[3%] pl-[5%] " //header of the card
-              >
-                <h1 className="font-extrabold text-3xl">
-                  Sastra Network Solution Inc.
-                </h1>
-              </div>
-            </div>
+              className="flex justify-between h-40 bg-sky-100" //logo & header of the card
+              style={{
+                backgroundImage: "url(images/card.png)",
+                backgroundSize: "cover", // Cover the entire div
+                backgroundPosition: "center", // Center the background image
+              }}
+            ></div>
 
             <section
               className=" px-[5%] flex w-[100%]  " //lower Details Starts here
             >
               <div
                 className="w-[55%] pl-[1%] pt-[2%]" //Deatails of the Staff
-              >
-                <div className="pt-[8%] pb-[2%] flex">
-                  <h1 className="font-semibold text-xl">ID : -</h1>
-                  <p className="text-xl font-sans pl-2 font-semibold">32</p>
-                </div>
-                <div className="flex py-1">
-                  <h2 className="text-s font-sans font-bold ">Email : - </h2>
-                  <p className="text-s font-sans pl-2">bistaamosh@gmail.com</p>
-                </div>
-                <div className="flex py-1">
-                  <h2 className="text-s font-sans font-bold ">Phone : - </h2>
-                  <p className="text-s font-sans pl-2">9813075481</p>
-                </div>
-                <div className="flex py-1">
-                  <h2 className="text-s font-sans font-bold ">Address : -</h2>
-                  <p className="text-s font-sans pl-2">Greenland, Tokha-8</p>
-                </div>
-                <div className="flex py-1">
-                  <h2 className="text-s font-sans font-bold ">
-                    Blood Group : -
-                  </h2>
-                  <p className="text-s font-sans pl-2">O+</p>
-                </div>
-              </div>
+              ></div>
 
               <div
-                className="flex justify-center w-[40%] h-[100%] " //Card Image & Name & Position
+                className="flex justify-center w-[100%] h-[] " //Card Image & Name & Position
               >
-                <div className="h-[100%] flex-col justify-center">
-                  <div className="   flex justify-center">
+                <div className="h-[100%]">
+                  <div className="   flex  absolute top-16 left-10">
                     <div
                       className=" w-48 h-48 rounded-full flex justify-center item-center border-2 border-sky-700 overflow-hidden" //Image div
                     >
-                      {/* <img                        //Image of the staff
-                        src="IMG_8569.jpg"
-                        alt="ID image"
-                        className="object-cover"
-                      /> */}
+                      {
+                        <img //Image of the staff
+                          src="IMG_8569.jpg"
+                          alt="ID image"
+                          className="object-cover"
+                        />
+                      }
                     </div>
                   </div>
-                  <div
-                    className="pt-[5%] w-[100%] flex-col justify-center" //Name and Position  div
-                  >
-                    <h1 className="py-[2%] text-l  font-sans font-semibold mx-auto flex justify-center">
-                      Amosh ST Bista
-                    </h1>
-                    <h2 className="flex justify-center text-sm font-bold ">
-                      Frontend Developer
-                    </h2>
-                  </div>
+                 
                 </div>
+                    <div>
+                      <h1>Amosh ST Bista</h1>
+                    </div>
               </div>
             </section>
           </div>

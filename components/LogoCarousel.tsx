@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 import election from "@/public/election.png";
 import ntc from "@/public/ntc.png";
@@ -12,10 +13,13 @@ import nitc12345 from "@/public/nitc12345.png";
 import nta1 from "@/public/nta1.png";
 import opmcm123456789 from "@/public/opmcm123456789.png";
 import police123456 from "@/public/police123456.png";
-import { useState } from "react";
 
 export default function LogoCarousel() {
   const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
 
   const logos = [
     { src: election, alt: "Election", link: "https://google.com" },
@@ -35,34 +39,21 @@ export default function LogoCarousel() {
   ];
 
   return (
-    <div className=" pb-10 w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-60} animate-infinite-scroll hover:!animated-infinite-scroll ">
+    <div className="pb-10 w-full inline-flex flex-nowrap overflow-hidden relative  [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]" onMouseEnter={handleHover} onMouseLeave={handleHover}>
+      <ul className={`flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-60 
+      ${isHovered ? '' : 'animate-infinite-scroll'}`}>
         {logos.map((logo, index) => (
           <li key={index}>
-            <a href={logo.link}>
+            <a href={logo.link}>  
               <Image
+                
                 src={logo.src}
                 alt={logo.alt}
+                width={300}
+                height={300}
                 className="hover:scale-150 transition-all ease-in-out duration-500"
               />
             </a>
-          </li>
-        ))}
-      </ul>
-      <ul
-        className=" py-10 flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-60 animate-infinite-scroll hover:!animated-infinite-scroll "
-        aria-hidden="true"
-      >
-        {logos.map((logo, index) => (
-          <li key={index}>
-            <a href={logo.link}>
-
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              className="hover:scale-150 transition-all ease-in-out duration-500"
-              />
-              </a>
           </li>
         ))}
       </ul>
