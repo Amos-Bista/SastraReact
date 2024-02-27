@@ -5,6 +5,7 @@ import { IoMdTimer } from "react-icons/io";
 import { BsAlexa } from "react-icons/bs";
 import { GrTechnology } from "react-icons/gr";
 import NewAboutBox from "@/components/NewAboutBox";
+import NewAboutBoxFull from "@/components/NewAboutBoxFULL";
 
 export default function About() {
   return (
@@ -46,7 +47,7 @@ export default function About() {
             <div className="flex flex-col">
               <div className="flex flex-wrap flex-row gap-8 mx-auto">
                 <NewAboutBox desc="Years of experience" limit={21} />
-                <NewAboutBox desc="Satisfied Clients" limit={500} />
+                <NewAboutBoxFull desc="Satisfied Clients" limit={500} />
                 <NewAboutBox desc="Valued Partner" limit={12} />
               </div>
             </div>
