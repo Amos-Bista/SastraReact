@@ -35,7 +35,7 @@ const CardComponent = () => {
           <img
             src="logo.ico"
             alt=""
-            className=" mt-2 h-20 w-36 absolute left-[76%]"
+            className=" mt-2 h-20 w-36 absolute left-[76  %]"
           />
         </div>
         <div className=" top-16 left-16 absolute w-48 h-48 rounded-[60px] flex justify-center item-center overflow-hidden">
