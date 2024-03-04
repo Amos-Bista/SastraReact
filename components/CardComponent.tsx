@@ -35,23 +35,23 @@ const CardComponent = () => {
           <img
             src="logo.ico"
             alt=""
-            className=" mt-2 h-20 w-36 absolute left-[76  %]"
+            className=" mt-2 h-20 w-36 absolute left-[76%]"
           />
         </div>
         <div className=" top-16 left-16 absolute w-48 h-48 rounded-[60px] flex justify-center item-center overflow-hidden">
-          <div className="bg-sky-200">photo photo photo photo</div>
-          {/* { <img //Image of the staff
-            src="IMG_8569.jpg"
-            alt="ID image"
-            className="object-cover bg-salte-900"
-          />} */}
+          
+            { <img //Image of the staff
+              src="IMG_8569.jpg"
+              alt="ID image"
+              className="object-cover bg-salte-900"
+            />} 
         </div>
 
         <div className="ml-[40%] py-[5%] pl-[10%]">
           <h1 className="text-4xl font-poppins " style={{ fontWeight: "900" }}>
-            Kishor Panth
+            Amosh ST Bista
           </h1>
-          <h2 className="text-xl font-semibold">Chief Executive Officer</h2>
+          <h2 className="text-xl font-semibold">Engineer </h2>
         </div>
         <div className="w-[100%] flex mt-[5%] ">
           <div className=" pb-14 w-[20%] h-[100%] flex-col text-center  border-r-4 border-slate-300 ">
