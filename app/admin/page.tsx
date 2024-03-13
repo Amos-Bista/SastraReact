@@ -2,10 +2,10 @@ import AdminLogIn from "@/components/adminLogIn";
 import AdminNav from "@/components/adminNAV";
 import React from "react";
 
-const page = () => {
+const AdminLoginPage = () => {
   return (
     <div className="flex ">
-      <AdminNav />
+   
       <div className="w-full flex justify-center">
         <AdminLogIn />
       </div>
@@ -13,4 +13,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AdminLoginPage;

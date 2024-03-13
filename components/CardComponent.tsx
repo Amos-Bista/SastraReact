@@ -41,7 +41,7 @@ const CardComponent = () => {
         <div className=" top-16 left-16 bg-blue-300 absolute w-48 h-48 rounded-[60px] flex justify-center item-center overflow-hidden">
           
             {/* { <img //Image of the staff
-              src="IMG_8569.jpg"
+              src="IMG_8569.jpg"  
               alt="ID image"
               className="object-cover bg-salte-900"
             />}  */}

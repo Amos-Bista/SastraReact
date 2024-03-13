@@ -8,10 +8,10 @@ const AdminNav = () => {
   };
 
   return (
-    <div className="h-100%  bg-sky-300/60">
+    <div className="h-100% w-[15%] bg-sky-900/90">
       <div className=" flex-col justify-center">
         <div className="py-10 flex justify-center">
-          <img src="favicon.ico" alt="" className="" style={Image} />
+          <img src="/logo.png" alt="" className="" style={Image} />
         </div>
 
         <ul className=" flex-col py-[10%]">
