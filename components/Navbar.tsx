@@ -31,7 +31,7 @@ const Navbar = () => {
           >
             <a href="/about">About</a>
           </li>
-          <li
+          <li 
             className=" px-1 shadow-lg shadow-cyan-100/5  transition duration-500  
                           border-b-2  border-solid border-transparent hover:border-[#22475d]
                           hover:brightness-150 hover:scale-125  rounded-md w-[25%] flex justify-center"

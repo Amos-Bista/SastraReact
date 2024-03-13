@@ -48,11 +48,13 @@ export default function Home() {
                 <div className="flex flex-wrap  flex-row gap-8 mx-auto">
                   <div className="  rounded-xl h-68 w-80 border-b-4 bg-white border-[#052651c6] py-10 px-8 shadow-lg hover:shadow-2xl my-10 transition-all  ease-in-out">
                     <div className="h-30">
-                      <TbSettingsCog
-                        size={55}
-                        color="#0A4085"
-                        className="size={120}  transition-all ease-in-out hover:cursor-pointer duration-500 hover:scale-150"
-                      />
+                      <a href="./expertpage">
+                        <TbSettingsCog
+                          size={55}
+                          color="#0A4085"
+                          className="size={120}  transition-all ease-in-out hover:cursor-pointer duration-500 hover:scale-150"
+                        />
+                      </a>
                     </div>
                     <div>
                       <h1 className="text-2xl font-semibold text-gray-700 my-4">
@@ -187,7 +189,6 @@ export default function Home() {
           <p className="text-center font-extrabold text-2xl">
             Our Valued Clients
           </p>
-
 
           <div id="Quotes">
             <LogoCarousel />

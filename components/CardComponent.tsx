@@ -33,25 +33,25 @@ const CardComponent = () => {
           style={CardHeader}
         >
           <img
-            src="logo.ico"
+            src="favicon.ico"
             alt=""
             className=" mt-2 h-20 w-36 absolute left-[76%]"
           />
         </div>
-        <div className=" top-16 left-16 absolute w-48 h-48 rounded-[60px] flex justify-center item-center overflow-hidden">
+        <div className=" top-16 left-16 bg-blue-300 absolute w-48 h-48 rounded-[60px] flex justify-center item-center overflow-hidden">
           
-            { <img //Image of the staff
+            {/* { <img //Image of the staff
               src="IMG_8569.jpg"
               alt="ID image"
               className="object-cover bg-salte-900"
-            />} 
-        </div>
+            />}  */}
+        </div>  
 
         <div className="ml-[40%] py-[5%] pl-[10%]">
           <h1 className="text-4xl font-poppins " style={{ fontWeight: "900" }}>
-            Amosh ST Bista
+            John Shrestha
           </h1>
-          <h2 className="text-xl font-semibold">Engineer </h2>
+          <h2 className="text-xl font-semibold">Position </h2>
         </div>
         <div className="w-[100%] flex mt-[5%] ">
           <div className=" pb-14 w-[20%] h-[100%] flex-col text-center  border-r-4 border-slate-300 ">
@@ -62,7 +62,7 @@ const CardComponent = () => {
             <div className="">
               <div className="leading-tight mb-2">
                 <h1 className="inline-flex text-l font-[900]">Email</h1>
-                <p>kishor@sastranetwork.com</p>
+                <p>Example@gmail.com</p>
               </div>
             </div>
             <div>

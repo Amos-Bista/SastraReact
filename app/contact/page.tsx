@@ -1,35 +1,14 @@
 "use client";
-
-import React, { useState } from "react";
+import React from "react";
 import ContactImg from "@/components/contactCover";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
-import ReCAPTCHA from "react-google-recaptcha";
-
+import Tick from "@/components/recaptcha";
 import Map from "@/components/Map";
 
 export default function CareerPage() {
-  const handlecaptcha = () => {
-    console.log("captcha");
-  };
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [company, setCompany] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    await fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify({ name, email, phone, company, message }),
-    });
-  };
-
   return (
     <div>
       <br />
@@ -94,7 +73,7 @@ export default function CareerPage() {
       </div>
 
       <div className="w-[60%] bg-sky-600 px-64 py-10 flex justify-center mx-auto rounded-2xl ">
-        <form className="" onSubmit={handleSubmit}>
+        <form className="" action="">
           <h1 className="font-bold text-white text-3xl my-4">
             Get in Touch with us.
           </h1>
@@ -103,46 +82,34 @@ export default function CareerPage() {
               type="text"
               placeholder="Name"
               className="w-[100%] my-2 px-4 py-1 rounded-xl "
-              onChange={(e) => setName(e.target.value)}
             />
             <input
               type="email"
               placeholder="Email"
               className="w-[100%] my-2 px-4 py-1 rounded-xl "
-              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="number"
               placeholder="Phone no"
               className="w-[100%] my-2 px-4 py-1 rounded-xl "
-              onChange={(e) => setPhone(e.target.value)}
             />
             <input
               type="text"
               placeholder="Company Name"
               className="w-[100%] my-2  px-4 py-1 rounded-xl "
-              onChange={(e) => setCompany(e.target.value)}
             />
             <input
               type="text"
               placeholder="Message"
               className="w-[100%] h-24 my-2 px-4 py-1 flex justify-start items-start  rounded-xl  "
-              onChange={(e) => setMessage(e.target.value)}
             />
             <br />
             <div className=" flex justify-center">
-              {/* Your form components */}
-              <ReCAPTCHA
-                sitekey="6Ld823YpAAAAACx86ac-U8sVELYhRKE73Qij8Z2C"
-                onChange={handlecaptcha}
-              />
+              <Tick />
             </div>
             <br />
             <div className="flex justify-center">
-              <button
-                type="submit"
-                className="h-10 w-60 bg-white font-mono text-l hover:scale-110 hover:bg-gray-200 rounded-xl "
-              >
+              <button className="h-10 w-60 bg-white font-mono text-l hover:scale-110 hover:bg-gray-200 rounded-xl ">
                 Submit
               </button>
             </div>

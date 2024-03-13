@@ -15,7 +15,7 @@ const NewAboutBox: React.FC<ReusableComponentProps> = ({ desc, limit }) => {
     const interval = setInterval(() => {
       if (count < limit) {
         setCount((prevCount) => prevCount + 1); // Increase count rapidly initially
-        if (intervalDuration < 40) {
+        if (intervalDuration < 200) {
           setIntervalDuration((prevIntervalDuration) => prevIntervalDuration + 2); // Gradually increase interval duration
         }
       } else {
