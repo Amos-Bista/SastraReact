@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -12,7 +12,7 @@ export default function AdminRegister() {
 
   const router = useRouter();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!name || !email || !password) {
@@ -49,7 +49,7 @@ export default function AdminRegister() {
       });
 
       if (res.ok) {
-        const form = e.target;
+        const form = e.target as HTMLFormElement;
         form.reset();
         router.push("/");
       } else {
