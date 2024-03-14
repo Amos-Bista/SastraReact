@@ -61,7 +61,7 @@ export default function AdminRegister() {
   };
 
   return (
-    <div className="grid place-items-center h-screen w-[100%]">
+    <div className="flex justify-center items-center h-screen w-[100%]">
       <div className="shadow-lg h-[50%] px-[10%]  border-t-4 border-blue-400 rounded-xl bg-sky-100/80">
         <h1 className="text-3xl font-bold my-4 flex justify-center ">
           Register

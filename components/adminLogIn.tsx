@@ -36,19 +36,21 @@ export default function AdminLogIn() {
   };
 
   return (
-    <div className="grid place-items-center h-screen ">
-      <div className="h-[50%] flex-col justify-center shadow-lg w-[100%] p-[2%] border-t-4 bg-sky-400/10 border-blue-400 rounded-xl">
-        <h1 className=" flex justify-center text-xl font-bold my-4">Login</h1>
+    <div className="flex items-center justify-center h-screen w-[100%] ">
+      <div className=" relative h-[60%]  flex-col justify-center shadow-lg  p-[2%] border-t-4 bg-sky-400/10 border-blue-400 rounded-xl">
+        <h1 className=" flex justify-center text-xl font-bold my-12">Welcome Adminstrator</h1>
+        
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 mx-4">
+          <img src="logo.png" className="h-12 w-16 absolute top-5" />
           <input
-            className="pl-[5%] py-[10%] h-12 w-80  rounded-xl "
+            className="pl-[5%] py-[10%] h-12 w-96  rounded-xl "
             onChange={(e) => setEmail(e.target.value)}
             type="text"
             placeholder="Email"
           />
           <input
-            className="pl-[5%] py-[10%] h-12 w-80  rounded-xl "
+            className="pl-[5%] py-[10%] h-12 w-96  rounded-xl "
             onChange={(e) => setPassword(e.target.value)}
             type="password"
             placeholder="Password"

@@ -27,7 +27,7 @@ const CardComponent = () => {
 
   return (
     <div className=" h-[100%] w-[100%]" style={BackgroundImage}>
-      <div className=" relative lg:w-[45%] h-[65%] md:w-[80%] w-[90%] bg-white shadow-2xl rounded-[30px] overflow-hidden bg-gradient-to-r from-white to-indigo-100 ... ">
+      <div className=" relative lg:w-[45%] h-[70%] md:w-[80%] w-[90%] bg-white shadow-2xl rounded-[30px] overflow-hidden bg-gradient-to-r from-white to-indigo-100 ... ">
         <div
           className=" relative w-[100%] bg-sky-200 overflow-hidden"
           style={CardHeader}
@@ -40,11 +40,11 @@ const CardComponent = () => {
         </div>
         <div className=" top-16 left-16 bg-blue-300 absolute w-48 h-48 rounded-[60px] flex justify-center item-center overflow-hidden">
           
-            {/* { <img //Image of the staff
-              src="IMG_8569.jpg"  
+            {/* {<img //Image of the staff
+              src="IMG_8569.jpg"
               alt="ID image"
               className="object-cover bg-salte-900"
-            />}  */}
+            />} */}
         </div>  
 
         <div className="ml-[40%] py-[5%] pl-[10%]">
@@ -53,8 +53,8 @@ const CardComponent = () => {
           </h1>
           <h2 className="text-xl font-semibold">Position </h2>
         </div>
-        <div className="w-[100%] flex mt-[5%] ">
-          <div className=" pb-14 w-[20%] h-[100%] flex-col text-center  border-r-4 border-slate-300 ">
+        <div className="w-[100%] flex my-[3%] ">
+          <div className=" pb-14 w-[20%] h-[0%] flex-col text-center  border-r-4 border-slate-300 ">
             <h1 className="inline-flex text-l font-[900]">Staff ID</h1>
             <p>002</p>
           </div>
