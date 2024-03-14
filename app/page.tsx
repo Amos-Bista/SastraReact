@@ -1,5 +1,9 @@
+"use client";
+
 import HeroSection from "@/components/HeroSection";
 import LogoCarousel from "@/components/LogoCarousel";
+
+import React, { useEffect, useState } from "react";
 
 import { TbSettingsCog } from "react-icons/tb";
 import { FaHandshakeSimple, FaVideo } from "react-icons/fa6";
@@ -8,6 +12,11 @@ import { TiWiFi } from "react-icons/ti";
 import { HiDatabase } from "react-icons/hi";
 
 export default function Home() {
+  const [pageText, setPageText] = useState("");
+
+  useEffect(() => {
+    setPageText(window.localStorage.getItem("pageText") || "");
+  }, []);
   return (
     <main>
       {" "}
@@ -30,9 +39,7 @@ export default function Home() {
               </p>
             </div>
             <div className="w-[25%] text-left pl-[3%] ml-10S text-[#052651]  font-extrabold ">
-              With more than a decade of experience and diverse portfolio of
-              implemented projects, we possess required market expertise to
-              provide you with best support and solution.
+              {pageText}
             </div>
           </div>
 
