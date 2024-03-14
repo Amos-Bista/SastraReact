@@ -2,13 +2,29 @@
 import React, { useState } from "react";
 
 import AdminNAV from "@/components/adminNAV";
+import router from "next/router";
 
-const AdminHomePage = () => {
+const AdminHomePage = async () => {
   const [text, setText] = useState("");
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    localStorage.setItem("pageText", text);
-    // router.push("/");
+
+    const res = await fetch("api/admin", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ text }),
+    });
+
+    if (res.ok) {
+      const form = e.target;
+
+      router.push("/");
+    } else {
+      console.log("User registration failed.");
+    }
   };
 
   return (
