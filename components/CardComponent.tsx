@@ -40,16 +40,16 @@ const CardComponent = () => {
         </div>
         <div className=" top-16 left-16 bg-blue-300 absolute w-48 h-48 rounded-[60px] flex justify-center item-center overflow-hidden">
           
-            {/* {<img //Image of the staff
+            {<img //Image of the staff
               src="IMG_8569.jpg"
               alt="ID image"
               className="object-cover bg-salte-900"
-            />} */}
+            />}
         </div>  
 
         <div className="ml-[40%] py-[5%] pl-[10%]">
           <h1 className="text-4xl font-poppins " style={{ fontWeight: "900" }}>
-            John Shrestha
+            john Shrestha
           </h1>
           <h2 className="text-xl font-semibold">Position </h2>
         </div>

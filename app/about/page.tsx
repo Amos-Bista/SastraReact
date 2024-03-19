@@ -50,7 +50,7 @@ export default function About() {
                 <NewAboutBox desc="Valued Partner" limit={12} />
               </div>
             </div>
-          </div>e
+          </div>
         </div>
 
         <div>

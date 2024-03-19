@@ -1,6 +1,6 @@
 import { GoogleMapsEmbed } from "@next/third-parties/google";
 
-export default function Map() {
+function Map() {
   return (
     <GoogleMapsEmbed
       apiKey="AIzaSyCbBnz_FHCJyL6Y6WwJ2m1CDj9K24Ij9Wc"
@@ -11,3 +11,4 @@ export default function Map() {
     />
   );
 }
+export default Map;

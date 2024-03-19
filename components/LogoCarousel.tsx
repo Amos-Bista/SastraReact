@@ -14,8 +14,8 @@ import opmcm123456789 from "@/public/opmcm123456789.png";
 import police123456 from "@/public/police123456.png";
 import { useState } from "react";
 
-export default function LogoCarousel() {
-  const [isHovered, setIsHovered] = useState(false);
+function LogoCarousel() {
+  const [isHovered, setIsHovered] = useState(true);
 
   const logos = [
     { src: election, alt: "Election", link: "https://google.com" },
@@ -27,11 +27,7 @@ export default function LogoCarousel() {
     { src: nitc12345, alt: "nitc12345", link: "https://nitc.gov.np" },
     { src: nta1, alt: "nta1", link: "https://nta.gov.np" },
     { src: opmcm123456789, alt: "opmcm123456789", link: "https://nta.gov.np" },
-    {
-      src: police123456,
-      alt: "police123456",
-      link: "https://www.nepalpolice.gov.np/",
-    },
+    { src: police123456,alt: "police123456",link: "https://www.nepalpolice.gov.np",},
   ];
 
   return (
@@ -51,8 +47,7 @@ export default function LogoCarousel() {
       </ul>
       <ul
         className=" py-10 flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-60 animate-infinite-scroll hover:!animated-infinite-scroll "
-        aria-hidden="true"
-      >
+        aria-hidden="true">
         {logos.map((logo, index) => (
           <li key={index}>
             <a href={logo.link}>
@@ -69,3 +64,4 @@ export default function LogoCarousel() {
     </div>
   );
 }
+export default LogoCarousel;
