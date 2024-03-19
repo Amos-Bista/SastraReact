@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const AdminAboutPage = () => {
   // Step 2: Declare a state variable to hold the table data
@@ -31,22 +31,22 @@ const AdminAboutPage = () => {
   }, [tableData]);
 
   return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Age</th>
+    <div className="container mx-auto ">
+      <table className="min-w-full divide-y  divide-gray-200">
+        <thead className="bg-gray-50">
+          <tr >
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">ID</th>
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Name</th>
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Age</th >
           </tr>
         </thead>
-        <tbody>
+        <tbody className="">
           {/* Render table rows from state */}
           {tableData.map((row) => (
-            <tr key={row.id}>
+            <tr key={row.id} className="hover:bg-gray-100 px-6 py-4">
               <td>{row.id}</td>
               {/* Allow editing name */}
-              <td>
+              <td className="px-6 py-4 whitespace-nowrap">
                 <input
                   type="text"
                   value={row.name}
@@ -54,7 +54,7 @@ const AdminAboutPage = () => {
                 />
               </td>
               {/* Allow editing age */}
-              <td>
+              <td className="px-6 py-4 whitespace-nowrap">
                 <input
                   type="n"
                   value={row.age}
@@ -65,7 +65,9 @@ const AdminAboutPage = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={insertRow}>Insert Row</button>
+      <button className='h-10 w-60 bg-sky-600 font-mono text-l rounded-xl text-white
+      '
+       onClick={insertRow}>Insert Row</button>
     </div>
   );
 };
