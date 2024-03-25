@@ -51,7 +51,7 @@ function AdminRegister() {
       if (res.ok) {
         const form = e.target as HTMLFormElement;
         form.reset();
-        router.push("/");
+        router.push("/adminHome");
       } else {
         console.log("User registration failed.");
       }
@@ -69,7 +69,7 @@ function AdminRegister() {
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input
-            className=" w-80 py-[3%] px-[2%] mb-[2%] rounded-xl"
+            className=" w-80 py-[3%] px-[2%] mb-[2%] rounded-xl"  
             onChange={(e) => setName(e.target.value)}
             type="text"
             placeholder="Full Name"
