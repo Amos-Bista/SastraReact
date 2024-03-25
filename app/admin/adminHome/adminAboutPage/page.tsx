@@ -37,7 +37,7 @@ const AdminAboutPage = () => {
           <tr >
             <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">ID</th>
             <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Name</th>
-            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">Age</th >
+            <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-black-500 uppercase tracking-wider">details</th >
           </tr>
         </thead>
         <tbody className="">
@@ -56,7 +56,7 @@ const AdminAboutPage = () => {
               {/* Allow editing age */}
               <td className="px-6 py-4 whitespace-nowrap">
                 <input
-                  type="n"
+                  type="text"
                   value={row.age}
                   onChange={(e) => updateTableData(row.id, 'age', e.target.value)}
                 />
